@@ -13,7 +13,7 @@ const { MongoClient } = require("mongodb");
 
 const getList = async () => {
   const uri =
-    "mongodb+srv://lsouthall:Qwerty123@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
+    "mongodb+srv://lsouthall:<password>@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
 
   const client = new MongoClient(uri, {
     useNewUrlParser: true,
@@ -38,7 +38,7 @@ const getList = async () => {
 
 const addToDo = async toDo => {
   const uri =
-    "mongodb+srv://lsouthall:Qwerty123@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
+    "mongodb+srv://lsouthall:<password>@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
 
   const client = new MongoClient(uri, {
     useNewUrlParser: true,
@@ -62,7 +62,7 @@ const addToDo = async toDo => {
 
 const deleteToDo = async toDo => {
   const uri =
-    "mongodb+srv://lsouthall:Qwerty123@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
+    "mongodb+srv://lsouthall:<password>@practice-cluster-gr1lb.mongodb.net/test?retryWrites=true&w=majority";
 
   const client = new MongoClient(uri, {
     useNewUrlParser: true,
